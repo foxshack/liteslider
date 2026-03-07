@@ -3,7 +3,7 @@
 }
 
 .slider {
-  overscroll-behavior: contain;
+  overscroll-behavior-x: contain;
 
   &-inner {
     will-change: scroll-position;
@@ -13,7 +13,7 @@
     gap: 0 1rem;
     padding: 5px;
     scroll-snap-type: x mandatory;
-    overscroll-behavior: contain;
+    overscroll-behavior-x: contain;
     overflow-x: scroll;
     overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
