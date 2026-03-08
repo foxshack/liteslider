@@ -7,40 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Slider</title>
 
+  <link rel="stylesheet" href="demo.css">
+
   <style>
-    /* Minimal CSS Reset */
-    html {
-      box-sizing: border-box;
-      font-size: 16px;
-    }
-
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-
-    body,
-    ol,
-    ul {
-      margin: 0;
-      padding: 0;
-      font-weight: normal;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-    }
 
     /* Demo CSS */
 
-    body {
+    /* body {
       overflow-x: hidden;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
@@ -121,6 +94,28 @@
       margin-top: 0;
     }
 
+    .note {
+      background: #f7fafc;
+      border-left: 4px solid #667eea;
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+      font-size: 0.95rem;
+    }
+
+    code {
+      background: #f7fafc;
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.9em;
+      color: #e83e8c;
+    } */
+
+    .d-none {
+      display: none;
+    }
+
     .demo-box {
       padding: 1.5rem;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -142,28 +137,6 @@
       font-size: 0.95rem;
     }
 
-    .note {
-      background: #f7fafc;
-      border-left: 4px solid #667eea;
-      padding: 1rem 1.25rem;
-      margin: 1rem 0;
-      border-radius: 4px;
-      font-size: 0.95rem;
-    }
-
-    .d-none {
-      display: none;
-    }
-
-    code {
-      background: #f7fafc;
-      padding: 0.2rem 0.4rem;
-      border-radius: 3px;
-      font-family: 'Courier New', monospace;
-      font-size: 0.9em;
-      color: #e83e8c;
-    }
-
   </style>
 
   <link rel="stylesheet" href="../dist/slider.css">
@@ -171,22 +144,22 @@
 
 <body>
 
-  <div class="header">
-    <h1>🎚️ Lite Slider</h1>
+  <header class="header">
+    <h1>Lite Slider</h1>
     <p>A lightweight, responsive, and accessible slider component</p>
     <p>See the <a href="https://github.com/mikeh74/liteslider#readme">README.md</a> for more information.</p>
-  </div>
+  </header>
 
-  <div class="container">
+  <main class="container">
 
     <div class="demo-section">
       <h2>Example Slider with elements with links</h2>
 
-      <div class="note">
+      <aside class="note">
         <strong>Accessibility tip:</strong> If elements have links then they are focusable, so you may want to add
         <code>tabindex="-1"</code> to the button elements so that a keyboard user doesn't need
         to tab over them.
-      </div>
+      </aside>
 
     <div class="slider">
       <div class="slider-nav hidden">
@@ -221,14 +194,14 @@
     <div class="demo-section">
       <h2>Example Slider with pager</h2>
 
-      <div class="note">
+      <aside class="note">
         <p>To add pager / dot style navigation you just need to add an extra
           div with the class <code>slider-pager</code>.</p>
 
         <p>This example also includes some styling to place the buttons at either
           end of the slider. To get that styling you need to wrap the buttons and 
           <code>slider-inner</code> with a div with a class of <code>slider-button-flex</code>.</p>
-      </div>
+        </aside>
 
     <div class="slider">
       <div class="slider-button-flex">
@@ -380,11 +353,11 @@
     <div class="demo-section">
       <h2>Example Slider where buttons hidden on desktop</h2>
 
-      <div class="note">
+      <aside class="note">
         In this example the buttons will remain hidden on desktop as there are
         only four elements in the slider (which all show in the viewport on
         desktop with the default settings).
-      </div>
+      </aside>
 
     <div class="slider">
       <div class="slider-inner">
@@ -503,7 +476,7 @@
 
     </div>
 
-  </div>
+  </main>
 
   <script src="../dist/index.js"></script>
 
