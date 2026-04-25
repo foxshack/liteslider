@@ -47,6 +47,7 @@ img {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -185,27 +186,27 @@ code {
   font-weight: 500;
 }
 
-    .d-none {
-      display: none;
-    }
+.d-none {
+  display: none;
+}
 
-    .demo-box {
-      padding: 1.5rem;
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      color: white;
-      height: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
+.demo-box {
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-    .demo-box h3 {
-      margin: 0 0 0.75rem 0;
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
+.demo-box h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
-    .demo-box p {
-      margin: 0;
-      color: rgba(255, 255, 255, 0.95);
-      font-size: 0.95rem;
-    }
+.demo-box p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 0.95rem;
+}
