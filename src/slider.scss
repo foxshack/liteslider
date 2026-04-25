@@ -3,7 +3,9 @@
 }
 
 .slider {
-  overscroll-behavior-x: contain;
+  // overscroll-behavior: contain;
+  // overscroll-behavior-y: inherit;
+  // overscroll-behavior-x: contain;
 
   &-inner {
     will-change: scroll-position;
